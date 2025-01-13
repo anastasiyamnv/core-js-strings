@@ -208,10 +208,6 @@ function startsWith(str, substr) {
   return str.startsWith(substr);
 }
 
-// function startsWith(str, substr) {
-//   return str.indexOf(substr) === 0;
-// }
-
 /**
  * Checks if a string ends with a specific substring.
  *
@@ -245,8 +241,6 @@ function formatTime(minutes, seconds) {
   const ss = String(seconds).padStart(2, '0');
   return `${mm}:${ss}`;
 }
-
-// return mm + ':' + ss;
 
 /**
  * Returns a string in reverse order.
@@ -329,7 +323,6 @@ function isPalindrome(str) {
   const newstr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
   return newstr === newstr.split('').reverse().join('');
 }
-// const newstr = str.replace
 
 /**
  * Find the longest word in the sentence. If there are multiple longest words,
@@ -452,11 +445,6 @@ function unbracketTag(str) {
 function extractEmails(str) {
   return str.split(';');
 }
-
-// function extractEmails(str) {
-//   const emailRegex = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b/g;
-//   return str.match(emailRegex) || [];
-// }
 
 /**
  * Encode specified string with ROT13 cipher
